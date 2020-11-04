@@ -32,6 +32,10 @@ input[type=text], input[type=password], textarea {
     clear:both;
     @include container;
     zoom:1;
+    width: 100% !important;
+    border-bottom:1px solid #ccc;
+    font-family: Arvo, serif !important;
+    
 
     ul {
         background:#fafafa;
@@ -88,8 +92,12 @@ input[type=text], input[type=password], textarea {
 footer .navigation {
     float: none;
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0;
+}
+
+#footer-content {
+    justify-content: center;
 }
 
 /* @end */

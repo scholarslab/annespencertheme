@@ -131,7 +131,7 @@ input[type="checkbox"] {
 
 header {
     @include container;
-    padding: (2 * $spacing-unit) 0;
+    // padding: (2 * $spacing-unit) 0;
     position: relative;
 }
 
@@ -139,25 +139,39 @@ header {
     @include container;
 
     img {
-        width: 100%;
-        height: auto;
         vertical-align: bottom;
         border: solid #ccc;
         border-width: 1px 1px 0 1px;
+        
     }
 }
 
+.banner {
+    height: 300px;
+    width: 100vw;
+    // background: black;
+    overflow: hidden;
+    background: #808080; 
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/9c164a5f58e3c53bd06897516eea6a7e.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/9c164a5f58e3c53bd06897516eea6a7e.jpg");
+    background-size: cover;
+    background-position: center 60%;
+    text-align: center;
+}
+
 #site-title {
-    float:left;
-    width:50%;
     font-weight: normal; //normal
-    font-family: Helvetica, Arial, sans-serif;//'Gill Sans MT', 'Gill Sans', sans-serif;
+    font-family: Arvo, serif !important;
     color:#015581;
     font-size: 3 * $base-font-size;
     line-height: 2 * $base-line-height;
     // text-transform:uppercase;
     // letter-spacing:.2em;
-    position:relative;
+    // position:relative;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     img {
         max-width: 100%;
@@ -165,7 +179,17 @@ header {
     }
 }
 
-#site-title a { text-decoration:none; }
+#site-title a { text-decoration:none; color:#fff; }
+
+.tagline-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-size: 2 * $base-font-size;
+    // line-height: 2 * $base-line-height;
+}
 
 #search-container {
     float:right;
@@ -339,11 +363,11 @@ header {
     clear:both;
     @include container;
     z-index: 50;
+    width:100% !important;
 
     /* mega menu list */
     .nav-menu {
         display: flex;
-        position: relative;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -354,6 +378,9 @@ header {
         align-items: stretch;
         border-right: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
+
+        font-family: Arvo, serif !important;
+        font-size: 1.25 * $base-font-size;
     }
 
     li {
@@ -1119,13 +1146,14 @@ footer {
     overflow:hidden;
     margin-top: $spacing-unit;
 
-    a { text-decoration:none; }
+    a { text-decoration:none; font-weight: bold;}
 
     .navigation {
         font-weight:bold;
 
         li {
             display:inline;
+            float: none;
 
             &:after {
                 content: " \00B7";
@@ -1144,15 +1172,21 @@ footer {
             white-space:nowrap;
         }
     }
-
-    nav + p {
-        text-align: right;
-    }
 }
 
-#footer-text {
-    float:left;
-    width: 48%;
+#footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#custom-footer-text {
+    text-align: center;
+}
+
+#site-logo img {
+    width: 200px;
 }
 
 /* @end */

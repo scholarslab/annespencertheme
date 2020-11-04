@@ -486,7 +486,6 @@ header {
   margin: 0 auto;
   padding: 0;
   width: 960px;
-  padding: 36px 0;
   position: relative; }
   header:after {
     content: "\0020";
@@ -525,27 +524,48 @@ header {
     #header-image {
       width: 420px; } }
   #header-image img {
-    width: 100%;
-    height: auto;
     vertical-align: bottom;
     border: solid #ccc;
     border-width: 1px 1px 0 1px; }
 
+.banner {
+  height: 300px;
+  width: 100vw;
+  overflow: hidden;
+  background: #808080;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.5)), color-stop(20%, rgba(0, 0, 0, 0.5))), url("https://scholarslab.net/annespencerproject/files/original/9c164a5f58e3c53bd06897516eea6a7e.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/9c164a5f58e3c53bd06897516eea6a7e.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  text-align: center; }
+
 #site-title {
-  float: left;
-  width: 50%;
   font-weight: normal;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arvo, serif !important;
   color: #015581;
   font-size: 36px;
   line-height: 36px;
-  position: relative; }
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   #site-title img {
     max-width: 100%;
     height: auto; }
 
 #site-title a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
+
+.tagline-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px; }
 
 #search-container {
   float: right;
@@ -705,6 +725,7 @@ header {
   padding: 0;
   width: 960px;
   z-index: 50;
+  width: 100% !important;
   /* mega menu list */
   /* a top level navigation item in the mega menu */
   /* first descendant link within a top level navigation item */
@@ -735,7 +756,6 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -748,7 +768,9 @@ header {
         -ms-flex-align: stretch;
             align-items: stretch;
     border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc; }
+    border-bottom: 1px solid #ccc;
+    font-family: Arvo, serif !important;
+    font-size: 15px; }
   #primary-nav li {
     list-style-type: none;
     margin: 0;
@@ -1547,11 +1569,13 @@ footer {
     footer {
       width: 420px; } }
   footer a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: bold; }
   footer .navigation {
     font-weight: bold; }
     footer .navigation li {
-      display: inline; }
+      display: inline;
+      float: none; }
       footer .navigation li:after {
         content: " \00B7";
         margin: 0 10px 0 5px; }
@@ -1562,12 +1586,27 @@ footer {
         display: none; }
     footer .navigation a {
       white-space: nowrap; }
-  footer nav + p {
-    text-align: right; }
 
-#footer-text {
-  float: left;
-  width: 48%; }
+#footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#custom-footer-text {
+  text-align: center; }
+
+#site-logo img {
+  width: 200px; }
 
 /* @end */
 /* @group ----- Exhibit Builder ----- */
@@ -1746,7 +1785,10 @@ footer {
     margin: 0 auto;
     padding: 0;
     width: 960px;
-    zoom: 1; }
+    zoom: 1;
+    width: 100% !important;
+    border-bottom: 1px solid #ccc;
+    font-family: Arvo, serif !important; }
     #mobile-nav:after {
       content: "\0020";
       display: block;
@@ -1800,8 +1842,12 @@ footer {
   footer .navigation {
     float: none;
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0; }
+  #footer-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   /* @end */
   /* @group ----- Home ----- */
   #home #primary, #home #secondary {
