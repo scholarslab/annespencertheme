@@ -12,19 +12,19 @@ echo head(array(
 ?>
 <div id="primary">
     <?php if (!$is_home_page): ?>
-    <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
+        <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
     <?php endif; ?>
     <div id="simple-page-content">
-    <div class="page-text">
-    <?php
-    $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
-    echo $this->shortcodes($text);
-    ?>
+        <div class="page-text">
+        <?php
+        $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
+        echo $this->shortcodes($text);
+        ?>
+        </div>
+        <nav id="simple-pages-navigation">
+            <?php echo simple_pages_navigation(); ?>
+        </nav>
     </div>
-    <nav id="simple-pages-navigation">
-        <?php echo simple_pages_navigation(); ?>
-    </nav>
-    <div>
 </div>
 
 <?php echo foot(); ?>
