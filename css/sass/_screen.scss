@@ -152,16 +152,56 @@ header {
     // background: black;
     overflow: hidden;
     background: #808080; 
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/9c164a5f58e3c53bd06897516eea6a7e.jpg");
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/9c164a5f58e3c53bd06897516eea6a7e.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/85b1b276a29c2ab177c20a3b648963bb.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/85b1b276a29c2ab177c20a3b648963bb.jpg");
     background-size: cover;
-    background-position: center 60%;
+    background-position: center 65%;
     text-align: center;
 }
 
+.browse-item-banner {
+    height: 300px;
+    width: 100vw;
+    // background: black;
+    overflow: hidden;
+    background: #808080; 
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/b5d4d26684d1171717c8080b22b99e78.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/b5d4d26684d1171717c8080b22b99e78.jpg");
+    background-size: cover;
+    background-position: center 45%;
+    text-align: center;
+}
+
+.browse-collections-banner {
+    height: 300px;
+    width: 100vw;
+    // background: black;
+    overflow: hidden;
+    background: #808080; 
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/087d3b56f5a0c558a14f55423c1996e1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/087d3b56f5a0c558a14f55423c1996e1.jpg");
+    background-size: cover;
+    background-position: center 45%;
+    text-align: center;
+}
+
+.browse-exhibits-banner {
+    height: 300px;
+    width: 100vw;
+    // background: black;
+    overflow: hidden;
+    background: #808080; 
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/92a04bf12c72ccca7b1a4f57237f8ab7.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/92a04bf12c72ccca7b1a4f57237f8ab7.jpg");
+    background-size: cover;
+    background-position: center 45%;
+    text-align: center;
+}
+
+
 #site-title {
     font-weight: normal; //normal
-    font-family: Arvo, serif !important;
+    font-family: Arvo, Helvetica, Arial, sans-serif !important;
     color:#015581;
     font-size: 3 * $base-font-size;
     line-height: 2 * $base-line-height;
@@ -379,7 +419,7 @@ header {
         border-right: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
 
-        font-family: Arvo, serif !important;
+        font-family: Arvo, Helvetica, Arial, sans-serif !important;
         font-size: 1.25 * $base-font-size;
     }
 
@@ -1142,9 +1182,12 @@ ul.title-list {
 
 footer {
     clear:both;
-    @include container;
+    // @include container;
     overflow:hidden;
     margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    width:100% !important;
+    padding: 0 $spacing-unit;
 
     a { text-decoration:none; font-weight: bold;}
 
@@ -1179,14 +1222,16 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+
+    img {
+        width: 200px;
+        padding: 0 (0.5 * $spacing-unit);
+    }
 }
 
 #custom-footer-text {
     text-align: center;
-}
-
-#site-logo img {
-    width: 200px;
+    color: #808080;
 }
 
 /* @end */
