@@ -6,9 +6,9 @@
 * { box-sizing: border-box; }
 
 body {
-    font: $base-font-size Helvetica, Arial, sans-serif;
-    line-height: $base-line-height;
-    color: #333;
+    font: (1.15 * $base-font-size) Helvetica, Arial, sans-serif;
+    line-height: 1.15 * $base-line-height;
+    color: $base-font-color;
     background: #fff;
 }
 
@@ -119,9 +119,9 @@ input[type="checkbox"] {
     }
 
     /* -- Links -- */
-    a:link, a:visited { color: #369; }
+    a:link, a:visited { color: $link-font-color; }
 
-    a:hover, a:active { color: #ff8000; }
+    a:hover, a:active { color: $link-highlight-color; }
 
     img a { border:none; }
 
@@ -255,7 +255,7 @@ header {
     }
 
     button {
-        background: #369;
+        background: $link-font-color;
         color: white;
         position: absolute;
         border: 0;
@@ -299,7 +299,7 @@ header {
         position: absolute;
         width: 100%;
         color: #fff;
-        background:#369;
+        background: $link-font-color;
         top: 0;
         bottom: 0;
         font-size: 14px;
@@ -374,7 +374,7 @@ header {
 
     a { text-decoration:none; }
 
-    li { float: left;}
+    // li { float: left;}
 }
 #admin-bar {
     padding: 5px 0;
@@ -558,7 +558,7 @@ header {
     a:hover,
     a:focus,
     li.active > a {
-        color:#ff8000;
+        color: $link-highlight-color;
         position: relative;
         z-index: 1;
     }
@@ -592,7 +592,7 @@ header {
 
     .active a {
         background:#fff;
-        color:#333;
+        color:$base-font-color;
         font-weight:bold;
     }
 
@@ -1188,6 +1188,7 @@ footer {
     margin-bottom: $spacing-unit;
     width:100% !important;
     padding: 0 $spacing-unit;
+    font-size: $base-font-size;
 
     a { text-decoration:none; font-weight: bold;}
 
@@ -1326,7 +1327,7 @@ footer {
 .exhibit-page-nav a:hover,
 .exhibit-page-nav a:active,
 .exhibit-page-nav .current a {
-    background:#ff8000;
+    background: $link-highlight-color;
 }
 
 .exhibit-pagination .next a {
@@ -1373,3 +1374,50 @@ footer {
     display: inline;
 }
 /* @end */
+
+/* @group ----- Simple Pages ----- */
+
+.simple-page #simple-page-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.simple-page .page-text {
+    flex: 0 1 65%;
+}
+
+.simple-page #simple-pages-navigation {
+    flex: 0 1 30%;   
+    margin-top: 1em;
+}
+
+.simple-pages-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.simple-pages-navigation li {
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+}
+
+.simple-pages-navigation a:hover, .simple-pages-navigation a:focus, .simple-pages-navigation a:active {
+    background: rgba(0,0,0,.0375);
+    color: $link-font-color;
+}
+
+.simple-pages-navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2 * $base-font-size;
+    display: block;
+    line-height: 3em;
+    padding: 0 1em;
+}
+
+.simple-pages-navigation .active a {
+    color: $base-font-color;
+}
+
+
+/* @end */
+

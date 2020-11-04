@@ -358,14 +358,16 @@ th {
 
 /* @group ----- Typography ----- */
 /* @end */
+/* @group ----- Color ----- */
+/* @end */
 /* @group ----- Generic ----- */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 body {
-  font: 12px Helvetica, Arial, sans-serif;
-  line-height: 18px;
+  font: 13.8px Helvetica, Arial, sans-serif;
+  line-height: 20.7px;
   color: #333;
   background: #fff; }
 
@@ -726,8 +728,6 @@ header {
   padding-left: 0; }
   .navigation a {
     text-decoration: none; }
-  .navigation li {
-    float: left; }
 
 #admin-bar {
   padding: 5px 0;
@@ -1584,7 +1584,8 @@ footer {
   margin-top: 18px;
   margin-bottom: 18px;
   width: 100% !important;
-  padding: 0 18px; }
+  padding: 0 18px;
+  font-size: 12px; }
   footer a {
     text-decoration: none;
     font-weight: bold; }
@@ -1777,6 +1778,51 @@ footer {
   display: inline; }
 
 /* @end */
+/* @group ----- Simple Pages ----- */
+.simple-page #simple-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+.simple-page .page-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%; }
+
+.simple-page #simple-pages-navigation {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  margin-top: 1em; }
+
+.simple-pages-navigation ul {
+  margin: 0;
+  padding: 0; }
+
+.simple-pages-navigation li {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+.simple-pages-navigation a:hover, .simple-pages-navigation a:focus, .simple-pages-navigation a:active {
+  background: rgba(0, 0, 0, 0.0375);
+  color: #369; }
+
+.simple-pages-navigation a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14.4px;
+  display: block;
+  line-height: 3em;
+  padding: 0 1em; }
+
+.simple-pages-navigation .active a {
+  color: #333; }
+
+/* @end */
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */
   input[type=text], input[type=password], textarea {
@@ -1855,6 +1901,21 @@ footer {
       content: "-- "; }
     #mobile-nav li ul ul a:before {
       content: "---- "; }
+  .simple-page .page-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .simple-page #simple-pages-navigation {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0; }
   /* @end */
   /* @group ----- Footer ----- */
   footer .navigation {

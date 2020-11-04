@@ -85,6 +85,22 @@ input[type=text], input[type=password], textarea {
     }
 }
 
+.simple-page .page-text {
+    flex: 0 1 100%;
+    order: 2;
+}
+
+.simple-page #simple-pages-navigation {
+    flex: 0 1 100%;
+    order: 1;
+    margin-top: 0;
+}
+
+// #simple-page-content .navigation li {
+//     display: inline;
+//     // float: none;
+// }
+
 /* @end */
 
 /* @group ----- Footer ----- */
