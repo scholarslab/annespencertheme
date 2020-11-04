@@ -36,8 +36,9 @@
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
-    <?php if ($bodyclass!='items browse' && $bodyclass!='collections browse' && $bodyclass!='exhibits browse' && $bodyclass!='items show'):?>
-        <header class="banner" role="banner">
+    <?php if ($bodyclass!='items browse' && $bodyclass!='collections browse' 
+    && $bodyclass!='exhibits browse' && $bodyclass!='items show' && $bodyclass!='page simple-page'):?>
+        <header class="banner homepage-banner" role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <section class='hero-header-text'>
                 <div id="site-title"><?php echo link_to_home_page(option('site_title')); ?></div>
@@ -50,7 +51,7 @@
 
     <!-- Item Browse and Show Page Header Banner  -->
     <?php if ($bodyclass=='items browse' || $bodyclass=='items show' ):?>
-        <header class="browse-item-banner" role="banner">
+        <header class="banner browse-item-banner" role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <section class='hero-header-text'>
                 <div id="site-title"><?php echo link_to_home_page(option('site_title')); ?></div>
@@ -64,7 +65,7 @@
 
     <!-- Collections Browse Page Header Banner  -->
     <?php if ($bodyclass=='collections browse'):?>
-        <header class="browse-collections-banner" role="banner">
+        <header class="banner browse-collections-banner" role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <section class='hero-header-text'>
                 <div id="site-title"><?php echo link_to_home_page(option('site_title')); ?></div>
@@ -78,7 +79,7 @@
 
     <!-- Exhibits Browse Page Header Banner  -->
     <?php if ($bodyclass=='exhibits browse'):?>
-        <header class="browse-exhibits-banner" role="banner">
+        <header class="banner browse-exhibits-banner" role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <section class='hero-header-text'>
                 <div id="site-title"><?php echo link_to_home_page(option('site_title')); ?></div>
@@ -89,6 +90,21 @@
         </header>
     <?php endif ?>
     <!-- End Exhibits Browse Page Header Banner -->
+
+    <!-- Simple Page Header Banner  -->
+    <?php if ($bodyclass=='page simple-page'):?>
+        <header class="banner simple-page-banner" role="banner">
+            <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
+            <section class='hero-header-text'>
+                <div id="site-title"><?php echo link_to_home_page(option('site_title')); ?></div>
+                <?php if ($introText = get_theme_option('tagline_text')): ?>
+                    <div class="tagline-text"><?php echo $introText; ?></div>
+                <?php endif; ?>
+            </section>
+        </header>
+    <?php endif ?>
+    <!-- End Simple Page Header Banner -->
+
 
          <div id="primary-nav" role="navigation">
              <?php

@@ -149,53 +149,44 @@ header {
 .banner {
     height: 300px;
     width: 100vw;
-    // background: black;
     overflow: hidden;
     background: #808080; 
+    text-align: center;
+}
+
+.homepage-banner {
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/85b1b276a29c2ab177c20a3b648963bb.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/85b1b276a29c2ab177c20a3b648963bb.jpg");
     background-size: cover;
     background-position: center 65%;
-    text-align: center;
 }
 
 .browse-item-banner {
-    height: 300px;
-    width: 100vw;
-    // background: black;
-    overflow: hidden;
-    background: #808080; 
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/b5d4d26684d1171717c8080b22b99e78.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/b5d4d26684d1171717c8080b22b99e78.jpg");
     background-size: cover;
     background-position: center 45%;
-    text-align: center;
 }
 
 .browse-collections-banner {
-    height: 300px;
-    width: 100vw;
-    // background: black;
-    overflow: hidden;
-    background: #808080; 
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/087d3b56f5a0c558a14f55423c1996e1.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/087d3b56f5a0c558a14f55423c1996e1.jpg");
     background-size: cover;
     background-position: center 45%;
-    text-align: center;
 }
 
 .browse-exhibits-banner {
-    height: 300px;
-    width: 100vw;
-    // background: black;
-    overflow: hidden;
-    background: #808080; 
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/92a04bf12c72ccca7b1a4f57237f8ab7.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/92a04bf12c72ccca7b1a4f57237f8ab7.jpg");
     background-size: cover;
     background-position: center 45%;
-    text-align: center;
+}
+
+.simple-page-banner {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/59fc4d2d03c91b0ba960f3336b55bb72.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url("https://scholarslab.net/annespencerproject/files/original/59fc4d2d03c91b0ba960f3336b55bb72.jpg");
+    background-size: cover;
+    background-position: center 45%;
 }
 
 
@@ -470,6 +461,10 @@ header {
         background-color: #fafafa;
         z-index: 1;
 
+        &:hover {
+            background: rgba(0,0,0,.0475);
+        }
+        
         &:before {
             content: "";
             position: absolute;
@@ -556,9 +551,14 @@ header {
     }
 
     a:hover,
+    a:focus {
+        background: rgba(0,0,0,.0475);
+    }
+
+    a:hover,
     a:focus,
     li.active > a {
-        color: $link-highlight-color;
+        color: $base-font-color;
         position: relative;
         z-index: 1;
     }
