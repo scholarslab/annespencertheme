@@ -14,6 +14,8 @@
     $titleParts[] = option('site_title');
     ?>
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
+    
+    <link rel="shortcut icon" sizes="32x32" href="//www.library.virginia.edu/images/icon-32.png">
 
     <?php echo auto_discovery_link_tags(); ?>
 

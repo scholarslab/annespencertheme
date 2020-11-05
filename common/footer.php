@@ -23,13 +23,6 @@
           <?php endif;?>
         <?php endif;?>
 
-        <!-- <?php if ($logo = theme_logo() && $logoUrl = get_theme_option('logo_url')): ?> 
-           <div id="site-logo"><a href="<?php echo $logoUrl; ?>"><?php echo $logo; ?></a></div>
-        <?php endif;?> -->
-        <!-- <?php if ($logo = theme_logo()): ?>
-            <div id="site-logo"><?php echo $logo; ?></div>
-        <?php endif;?> -->
-
         <?php  echo link_to_home_page(option('site_title'));?>
     </div>
 

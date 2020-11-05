@@ -4,6 +4,8 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -366,7 +368,7 @@ th {
           box-sizing: border-box; }
 
 body {
-  font: 13.8px Helvetica, Arial, sans-serif;
+  font: 13.8px "Lato", Arial, sans-serif;
   line-height: 20.7px;
   color: #333;
   background: #fff; }
@@ -397,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3 {
   font-weight: normal;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   color: #015581; }
 
 h1 {
@@ -476,7 +478,7 @@ a:link, a:visited {
   color: #369; }
 
 a:hover, a:active {
-  color: #ff8000; }
+  color: #333; }
 
 img a {
   border: none; }
@@ -569,7 +571,7 @@ header {
 
 #site-title {
   font-weight: normal;
-  font-family: Arvo, Helvetica, Arial, sans-serif !important;
+  font-family: 'Arvo', 'Lato', Arial, sans-serif !important;
   color: #015581;
   font-size: 36px;
   line-height: 36px;
@@ -588,12 +590,14 @@ header {
 
 .tagline-text {
   position: absolute;
-  top: 70%;
+  top: 68%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 24px; }
+  font-size: 18px;
+  line-height: 21.6px;
+  max-width: 40%; }
 
 #search-container {
   float: right;
@@ -795,7 +799,7 @@ header {
             align-items: stretch;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    font-family: Arvo, Helvetica, Arial, sans-serif !important;
+    font-family: 'Arvo', 'Lato', Arial, sans-serif !important;
     font-size: 15px; }
   #primary-nav li {
     list-style-type: none;
@@ -1637,7 +1641,7 @@ footer {
     #exhibit-pages {
       width: 172px; } }
   #exhibit-pages h4 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
     font-weight: normal;
     text-transform: uppercase; }
   #exhibit-pages a {
@@ -1718,7 +1722,7 @@ footer {
 .exhibit-page-nav a:hover,
 .exhibit-page-nav a:active,
 .exhibit-page-nav .current a {
-  background: #ff8000; }
+  background: #333; }
 
 .exhibit-pagination .next a {
   float: right;
@@ -1835,7 +1839,10 @@ footer {
   /* @end */
   /* @group ----- Header ----- */
   #site-title {
-    width: 100%; }
+    width: 100%;
+    top: 35%; }
+  .tagline-text {
+    max-width: 100%; }
   /* @end */
   /* @group ----- Navigation ----- */
   #primary-nav {

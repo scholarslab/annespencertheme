@@ -1,12 +1,14 @@
 @import "base";
 @import "skeleton";
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* @group ----- Generic ----- */
 
 * { box-sizing: border-box; }
 
 body {
-    font: (1.15 * $base-font-size) Helvetica, Arial, sans-serif;
+    font: (1.15 * $base-font-size) 'Lato', Arial, sans-serif;
     line-height: 1.15 * $base-line-height;
     color: $base-font-color;
     background: #fff;
@@ -43,7 +45,7 @@ input[type="checkbox"] {
 
     h1, h2, h3 {
         font-weight: normal;
-        font-family: Helvetica, Arial, sans-serif; //'Gill Sans MT', 'Gill Sans', sans-serif;
+        font-family: 'Lato', Arial, sans-serif; //'Gill Sans MT', 'Gill Sans', sans-serif;
         color:#015581;
     }
 
@@ -192,7 +194,7 @@ header {
 
 #site-title {
     font-weight: normal; //normal
-    font-family: Arvo, Helvetica, Arial, sans-serif !important;
+    font-family: 'Arvo', 'Lato', Arial, sans-serif !important;
     color:#015581;
     font-size: 3 * $base-font-size;
     line-height: 2 * $base-line-height;
@@ -214,12 +216,13 @@ header {
 
 .tagline-text {
     position: absolute;
-    top: 70%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:#fff;
-    font-size: 2 * $base-font-size;
-    // line-height: 2 * $base-line-height;
+    font-size: 1.5 * $base-font-size;
+    line-height: 1.2 * $base-line-height;
+    max-width: 40%;
 }
 
 #search-container {
@@ -410,7 +413,7 @@ header {
         border-right: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
 
-        font-family: Arvo, Helvetica, Arial, sans-serif !important;
+        font-family: 'Arvo', 'Lato', Arial, sans-serif !important;
         font-size: 1.25 * $base-font-size;
     }
 
@@ -464,7 +467,7 @@ header {
         &:hover {
             background: rgba(0,0,0,.0475);
         }
-        
+
         &:before {
             content: "";
             position: absolute;
@@ -1251,7 +1254,7 @@ footer {
         width: skeleton-column-width(4, $tablet-width); }
 
     h4 {
-        font-family: Helvetica, Arial, sans-serif;//'Gill Sans MT', 'Gill Sans', sans-serif;
+        font-family: 'Lato', Arial, sans-serif;//'Gill Sans MT', 'Gill Sans', sans-serif;
         font-weight: normal;
         text-transform: uppercase;
     }

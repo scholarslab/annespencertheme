@@ -20,6 +20,11 @@ input[type=text], input[type=password], textarea {
 /* @group ----- Header ----- */
 #site-title {
     width: 100%;
+    top: 35%;
+}
+
+.tagline-text {
+    max-width: 100%;
 }
 /* @end */
 
