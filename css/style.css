@@ -489,7 +489,7 @@ header {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 980px;
   position: relative; }
   header:after {
     content: "\0020";
@@ -511,7 +511,7 @@ header {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px; }
+  width: 980px; }
   #header-image:after {
     content: "\0020";
     display: block;
@@ -753,7 +753,7 @@ header {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 980px;
   z-index: 50;
   width: 100% !important;
   /* mega menu list */
@@ -856,7 +856,7 @@ header {
     z-index: 999; }
   #primary-nav .sub-nav.open {
     display: block;
-    width: 160px; }
+    width: 163.75px; }
     #primary-nav .sub-nav.open li {
       width: 100%; }
   #primary-nav .subnav a:hover + ul,
@@ -972,7 +972,7 @@ header {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 980px;
   padding: 18px 10px;
   z-index: 0; }
   #content:after {
@@ -1031,7 +1031,7 @@ nav + .exhibit {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 460px;
+  width: 470px;
   margin-left: 0;
   margin-right: 0;
   padding-right: 10px; }
@@ -1054,7 +1054,7 @@ nav + .exhibit {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 460px;
+  width: 470px;
   margin-right: 0;
   padding-left: 10px; }
   @media only screen and (max-width: 767px) {
@@ -1071,7 +1071,15 @@ nav + .exhibit {
       width: 420px; } }
 
 #home #content h2 {
-  letter-spacing: .1em; }
+  letter-spacing: .1em;
+  margin-bottom: 0; }
+
+#home #primary h2 {
+  letter-spacing: 0.05em; }
+
+#home #primary .homepage-image {
+  float: left;
+  margin: 1em 1em 1em 0; }
 
 .featured,
 #featured-exhibit {
@@ -1084,7 +1092,7 @@ nav + .exhibit {
     margin: 0; }
   .featured h3,
   #featured-exhibit h3 {
-    margin: 0 0 18px; }
+    margin: 9px 0 18px; }
   .featured img,
   #featured-exhibit img {
     float: left;
@@ -1115,7 +1123,7 @@ nav + .exhibit {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 980px;
   padding: 18px 10px; }
   .items #content:after {
     content: "\0020";
@@ -1274,7 +1282,7 @@ ul.title-list {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 220px; }
+  width: 225px; }
   @media only screen and (max-width: 767px) {
     .browse .item h2,
     .browse .item-meta .item-img {
@@ -1310,7 +1318,7 @@ ul.title-list {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 700px;
+  width: 715px;
   margin: 0;
   max-width: 100%; }
   @media only screen and (max-width: 767px) {
@@ -1333,7 +1341,7 @@ ul.title-list {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 460px;
+  width: 470px;
   margin: 0;
   max-width: 100%; }
   @media only screen and (max-width: 767px) {
@@ -1438,7 +1446,7 @@ ul.title-list {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 220px;
+  width: 225px;
   margin-left: 0;
   margin: 0 0 18px;
   max-width: 100%; }
@@ -1465,7 +1473,7 @@ ul.title-list {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 160px;
+  width: 163.75px;
   margin-right: 0;
   float: right;
   text-align: right; }
@@ -1496,7 +1504,7 @@ ul.title-list {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 520px; }
+  width: 531.25px; }
   @media only screen and (max-width: 767px) {
     .collection-meta {
       margin: 0; } }
@@ -1635,7 +1643,7 @@ footer {
   border-top: 1px solid #eee; }
 
 #exhibit-pages {
-  width: 220px;
+  width: 225px;
   display: inline-block; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     #exhibit-pages {
@@ -1690,7 +1698,7 @@ footer {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 700px;
+  width: 715px;
   margin-left: 0;
   padding-right: 20px;
   margin-left: 0; }
@@ -1738,7 +1746,7 @@ footer {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 520px; }
+  width: 531.25px; }
   @media only screen and (max-width: 767px) {
     .exhibit .description,
     .exhibit .description ~ * {
@@ -1853,7 +1861,7 @@ footer {
     position: relative;
     margin: 0 auto;
     padding: 0;
-    width: 960px;
+    width: 980px;
     zoom: 1;
     width: 100% !important;
     border-bottom: 1px solid #ccc;

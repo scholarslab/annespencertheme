@@ -722,7 +722,20 @@ nav + .exhibit {
     #content h2 {
         // text-transform:uppercase;
         letter-spacing:.1em;
+        margin-bottom: 0;
     }
+
+}
+
+#home #primary {
+    h2 {
+        letter-spacing:0.05em;
+    }
+    .homepage-image {
+        float: left;
+        margin: 1em 1em 1em 0;
+    }
+
 }
 
 .featured,
@@ -734,7 +747,7 @@ nav + .exhibit {
 
     h2 { margin: 0; }
 
-    h3 { margin: 0 0 $spacing-unit; }
+    h3 { margin: ($spacing-unit*0.5) 0 $spacing-unit; }
 
     img {
         float: left;
